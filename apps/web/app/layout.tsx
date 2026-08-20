@@ -1,9 +1,10 @@
-import { Inter, JetBrains_Mono, Onest } from "next/font/google";
-
-import type { Metadata } from "next";
 import "./globals.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
+import { Inter, JetBrains_Mono, Onest } from "next/font/google";
 import appConfig from "@/app.config.json";
 import { cn } from "@/lib/utils";
+
+import type { Metadata } from "next";
 
 const fontHeading = Onest({
   subsets: ["latin"],
@@ -59,6 +60,7 @@ export default function RootLayout({
       >
         {children}
       </body>
+      <GoogleAnalytics gaId={process.env.GA_TRACKING_ID || ""} />
     </html>
   );
 }
