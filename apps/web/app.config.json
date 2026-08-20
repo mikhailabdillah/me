@@ -1,10 +1,10 @@
 {
-  "siteName": "Acme",
+  "siteName": "Mikhail Abdillah",
   "title": {
-    "default": "My Awesome Acme App",
-    "template": "%s | Acme"
+    "default": "Mikhail Abdillah Full-stack Developer",
+    "template": "%s | Mikhail Abdillah"
   },
-  "description": "The definitive platform for managing your business logic.",
+  "description": "Resourceful Full Stack Developer with 5+ years of experience building modern UIs and high-fidelity web applications",
   "logo": {
     "url": "/logo.png",
     "alt": "Acme logo",

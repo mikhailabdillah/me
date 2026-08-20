@@ -19,7 +19,9 @@ const fontMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   description: appConfig.description,
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://acme.com"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "https://mikhail-abdillah.com"
+  ),
   openGraph: {
     description: appConfig.description,
     images: [],
