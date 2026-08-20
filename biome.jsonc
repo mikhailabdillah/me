@@ -1,0 +1,73 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "extends": [
+    "ultracite/biome/core",
+    "ultracite/biome/react",
+    "ultracite/biome/next"
+  ],
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": {
+          "level": "on",
+          "options": {
+            "groups": [
+              {
+                "type": false,
+                "source": ["**"]
+              },
+              ":BLANK_LINE:",
+              {
+                "type": true,
+                "source": ["**"]
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "linter": {
+    "rules": {
+      "a11y": {
+        "useValidAnchor": "warn",
+        "noSvgWithoutTitle": "info"
+      },
+      "suspicious": {
+        "noShadow": "warn",
+        "noConsole": {
+          "level": "error",
+          "options": {
+            "allow": ["error", "warn", "table"]
+          }
+        }
+      },
+      "style": {
+        "useConsistentTypeDefinitions": {
+          "level": "warn",
+          "options": {
+            "style": "type"
+          }
+        },
+        "useConsistentArrowReturn": "off",
+        "useFilenamingConvention": {
+          "level": "on",
+          "options": {
+            "strictCase": false,
+            "requireAscii": true,
+            "match": "%?(.+?)[.](.+)",
+            "filenameCases": ["PascalCase", "kebab-case", "export"]
+          }
+        }
+      },
+      "complexity": {
+        "noExcessiveCognitiveComplexity": {
+          "level": "on",
+          "options": {
+            "maxAllowedComplexity": 25
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "siteName": "Acme",
+  "title": {
+    "default": "My Awesome Acme App",
+    "template": "%s | Acme"
+  },
+  "description": "The definitive platform for managing your business logic.",
+  "logo": {
+    "url": "/logo.png",
+    "alt": "Acme logo",
+    "width": 256,
+    "height": 256
+  },
+  "locales": ["en-US"]
+}
