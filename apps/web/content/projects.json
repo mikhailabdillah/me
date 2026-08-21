@@ -5,6 +5,7 @@
     "description": "A web application that helps users create professional resumes easily.",
     "image": "https://ik.imagekit.io/0bihy1yf6/_Mikhail/resume-builder.png",
     "github": null,
+    "tags": ["react.js", "redux", "vitest"],
     "live": "https://resume-builder-ruby-nu.vercel.app"
   },
   {
@@ -13,6 +14,15 @@
     "description": "A premium, headless e-commerce solution built for speed and sophistication.",
     "image": "https://ik.imagekit.io/0bihy1yf6/_Mikhail/cloth-store.png",
     "github": "https: //github.com/mikhailabdillah/next-eshop",
+    "tags": [
+      "react.js",
+      "next.js",
+      "tailwindcss",
+      "next-auth",
+      "shopify",
+      "mongodb",
+      "motion"
+    ],
     "live": "https://next-eshop-78.vercel.app"
   },
   {
@@ -21,6 +31,7 @@
     "description": "WLI is a results-driven digital marketing and web design agency.",
     "image": "https://ik.imagekit.io/0bihy1yf6/_Mikhail/wli.png",
     "github": null,
+    "tags": ["next.js", "shadcn", "tailwindcss", "motion"],
     "live": "https://www.withloveinternet.com"
   },
   {
@@ -29,6 +40,7 @@
     "description": "ExaVault's data transfer solutions are a new answer to an old problem.",
     "image": "https://ik.imagekit.io/0bihy1yf6/_Mikhail/exavault.png",
     "github": null,
+    "tags": ["react.js", "next.js", "mailchimp", "resend", "mui"],
     "live": "https://www.exavault.com"
   },
   {
@@ -37,6 +49,7 @@
     "description": "One5 Health is a private primary healthcare clinic based in London.",
     "image": "https://ik.imagekit.io/0bihy1yf6/_Mikhail/one5-health.png",
     "github": null,
+    "tags": ["react.js", "next.js", "mailchimp", "resend", "tailwindcss"],
     "live": "https://www.one5.health"
   },
   {
@@ -45,6 +58,15 @@
     "description": "Themes Collector is a curated digital marketplace and discovery platform.",
     "image": "https://ik.imagekit.io/0bihy1yf6/_Mikhail/themes-collector.png",
     "github": null,
+    "tags": [
+      "react.js",
+      "next.js",
+      "vitest",
+      "zustand",
+      "redis",
+      "shadcn",
+      "tailwindcss"
+    ],
     "live": "https://themescollector.com"
   }
 ]
