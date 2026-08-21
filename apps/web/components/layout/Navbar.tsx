@@ -16,15 +16,17 @@ const Navbar: React.FC = () => {
       <nav aria-label="Main Navigation">
         <div className={"container mx-auto h-20 px-4 py-2"}>
           <div className="grid h-full grid-cols-2 items-center justify-center md:grid-cols-3">
-            <Link href={"/"}>
-              <Image
-                alt="Mikhail Abdillah"
-                className="size-14"
-                height={128}
-                src={"/logo.png"}
-                width={128}
-              />
-            </Link>
+            <div>
+              <Link className="inline-flex" href={"/"}>
+                <Image
+                  alt="Mikhail Abdillah"
+                  className="size-14"
+                  height={128}
+                  src={"/logo.png"}
+                  width={128}
+                />
+              </Link>
+            </div>
             <div className="hidden text-center md:block">
               <Menu />
             </div>
