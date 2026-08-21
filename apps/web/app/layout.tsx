@@ -2,6 +2,8 @@ import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Inter, JetBrains_Mono, Onest } from "next/font/google";
 import appConfig from "@/app.config.json";
+import Footer from "@/components/layout/Footer";
+import Navbar from "@/components/layout/Navbar";
 import { cn } from "@/lib/utils";
 
 import type { Metadata } from "next";
@@ -58,7 +60,9 @@ export default function RootLayout({
           fontMono.variable
         )}
       >
+        <Navbar />
         {children}
+        <Footer />
       </body>
       <GoogleAnalytics gaId={process.env.GA_TRACKING_ID || ""} />
     </html>

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "pid:006",
+    "title": "Resume Builder",
+    "description": "A web application that helps users create professional resumes easily.",
+    "image": "https://ik.imagekit.io/0bihy1yf6/_Mikhail/resume-builder.png",
+    "github": null,
+    "live": "https://resume-builder-ruby-nu.vercel.app"
+  },
+  {
+    "id": "pid:005",
+    "title": "Cloth Store",
+    "description": "A premium, headless e-commerce solution built for speed and sophistication.",
+    "image": "https://ik.imagekit.io/0bihy1yf6/_Mikhail/cloth-store.png",
+    "github": "https: //github.com/mikhailabdillah/next-eshop",
+    "live": "https://next-eshop-78.vercel.app"
+  },
+  {
+    "id": "pid:004",
+    "title": "With love internet Website",
+    "description": "WLI is a results-driven digital marketing and web design agency.",
+    "image": "https://ik.imagekit.io/0bihy1yf6/_Mikhail/wli.png",
+    "github": null,
+    "live": "https://www.withloveinternet.com"
+  },
+  {
+    "id": "pid:003",
+    "title": "Exavault Website",
+    "description": "ExaVault's data transfer solutions are a new answer to an old problem.",
+    "image": "https://ik.imagekit.io/0bihy1yf6/_Mikhail/exavault.png",
+    "github": null,
+    "live": "https://www.exavault.com"
+  },
+  {
+    "id": "pid:002",
+    "title": "One5 Health",
+    "description": "One5 Health is a private primary healthcare clinic based in London.",
+    "image": "https://ik.imagekit.io/0bihy1yf6/_Mikhail/one5-health.png",
+    "github": null,
+    "live": "https://www.one5.health"
+  },
+  {
+    "id": "pid:001",
+    "title": "Themes collector",
+    "description": "Themes Collector is a curated digital marketplace and discovery platform.",
+    "image": "https://ik.imagekit.io/0bihy1yf6/_Mikhail/themes-collector.png",
+    "github": null,
+    "live": "https://themescollector.com"
+  }
+]
