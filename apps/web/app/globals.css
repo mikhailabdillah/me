@@ -119,6 +119,12 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@layer utilities {
+  .richtext {
+    @apply prose-hr:my-12 prose-h2:mt-12 prose-h3:mt-12 prose-p:mb-6 prose-ul:mb-6 prose-hr:block prose-ol:list-decimal prose-ul:list-disc prose-ol:pl-6 prose-ul:pl-6 prose-h2:lg:text-4xl prose-h3:lg:text-3xl prose-li:pl-2;
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -165,7 +171,47 @@
   .h6 {
     @apply text-lg md:text-xl;
   }
+  /* Style the code block wrapper */
   pre {
-    @apply font-mono;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    overflow-x: auto;
+    background-color: #282c34 !important; /* One Dark Pro fallback color */
+    border-radius: 0.5rem;
+  }
+  /* Ensure the code uses a clean monospace layout */
+  pre code {
+    font-family:
+      var(--font-mono), ui-monospace, SFMono-Regular, Monaco, monospace !important;
+    font-size: 0.875rem !important;
+    line-height: 1.5;
+  }
+  /* Dynamically colorize the generated Shiki syntax pieces */
+  pre code span {
+    color: var(--shiki-default);
+  }
+  h2 code,
+  h3 code,
+  h4 code,
+  h5 code,
+  h6 code,
+  p code {
+    @apply bg-neutral-100 text-pink-600 p-1 rounded-md font-medium;
+  }
+  table {
+    @apply w-full max-w-3xl text-sm mb-8;
+  }
+  table thead {
+    @apply border-b-2 border-b-neutral-200;
+  }
+  thead th,
+  tbody td {
+    @apply h-12 text-left;
+  }
+  tbody tr {
+    @apply border-b border-b-neutral-200;
+  }
+  blockquote {
+    @apply border-l-4 border-l-neutral-500 pl-6;
   }
 }

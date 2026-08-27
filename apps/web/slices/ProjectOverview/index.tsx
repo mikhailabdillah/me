@@ -4,7 +4,7 @@ import projects from "@/content/projects.json";
 const ProjectOverview = () => {
   return (
     <section>
-      <h2 className="mb-6 text-center">Project's overview</h2>
+      <h1 className="mb-6 text-center">Project's overview</h1>
       <div className="-mx-4 flex flex-row flex-wrap">
         {projects.map((project) => (
           <div

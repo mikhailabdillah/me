@@ -28,7 +28,7 @@ export default async function BlogPage({
   const { default: Post } = await import(`@/content/blog/${handle}.mdx`);
   return (
     <main>
-      <div className="container mx-auto max-w-4xl px-4 py-24">
+      <div className="richtext container mx-auto max-w-4xl px-4 py-24">
         <Post />
       </div>
     </main>
