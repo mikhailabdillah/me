@@ -1,5 +1,5 @@
 import "./globals.css";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { Inter, JetBrains_Mono, Onest } from "next/font/google";
 import appConfig from "@/app.config.json";
 import Footer from "@/components/layout/Footer";
@@ -64,7 +64,20 @@ export default function RootLayout({
         {children}
         <Footer />
       </body>
-      <GoogleAnalytics gaId={process.env.GA_TRACKING_ID || ""} />
+      <GoogleTagManager
+        auth={process.env.NEXT_PUBLIC_GTM_AUTH || ""}
+        gtmId={process.env.NEXT_PUBLIC_GTM_ID || ""}
+        preview={process.env.NEXT_PUBLIC_GTM_PREVIEW || ""}
+      />
+      <noscript>
+        <iframe
+          height="0"
+          src="https://googletagmanager.com"
+          style={{ display: "none", visibility: "hidden" }}
+          title="googletagmanager"
+          width="0"
+        />
+      </noscript>
     </html>
   );
 }
