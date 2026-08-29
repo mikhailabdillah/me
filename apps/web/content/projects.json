@@ -1,5 +1,21 @@
 [
   {
+    "id": "pid:008",
+    "title": "Atellier",
+    "description": "Furniture and Home Decor Headless Commerce",
+    "image": "https://ik.imagekit.io/0bihy1yf6/_Mikhail/atellier.png",
+    "tags": [
+      "react.js",
+      "next.js",
+      "typescript",
+      "tailwindcss",
+      "redis",
+      "turborepo",
+      "motion"
+    ],
+    "live": "https://atellier.themescollector.com"
+  },
+  {
     "id": "pid:006",
     "title": "Resume Builder",
     "description": "A web application that helps users create professional resumes easily.",

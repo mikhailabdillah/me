@@ -7,7 +7,14 @@ import type Projects from "@/content/projects.json";
 const ProjectCard = ({ project }: { project: (typeof Projects)[0] }) => {
   return (
     <div className="w-full border border-gray-200 p-6 text-black">
-      <div className="relative mb-6">
+      <Link
+        className="group/item relative mb-6 block"
+        href={project.live}
+        target="_blank"
+      >
+        <div className="absolute inset-0 flex size-full items-center bg-black/60 text-center text-white opacity-0 transition-all duration-500 group-hover/item:opacity-100">
+          <IconExternalLinkFilled className="mx-auto -mt-4 size-8" />
+        </div>
         <Image
           alt={project.title}
           className="aspect-5/3 size-full object-cover"
@@ -15,7 +22,7 @@ const ProjectCard = ({ project }: { project: (typeof Projects)[0] }) => {
           src={project.image}
           width={500}
         />
-      </div>
+      </Link>
       <div className="mb-2 font-bold text-black text-xl capitalize">
         {project.title}
       </div>
